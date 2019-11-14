@@ -13,7 +13,6 @@ import java.util.List;
 public class TutorialApplication extends SpringBootServletInitializer {
 
     public static void main(String[] args) {
-//        new TutorialApplication().configure(new SpringApplicationBuilder(TutorialApplication.class)).run(args);
         SpringApplication.run(TutorialApplication.class, args);
     }
 

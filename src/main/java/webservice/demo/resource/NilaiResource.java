@@ -1,7 +1,7 @@
-package webservice.demo.nilai;
+package webservice.demo.resource;
 
-import webservice.demo.karyawan.Karyawan;
-import webservice.demo.karyawan.KaryawanDAO;
+import webservice.demo.dao.NilaiDAO;
+import webservice.demo.model.Nilai;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -17,12 +17,6 @@ import java.util.List;
 @XmlRootElement(name="nilaiResource")
 @Path("/nilai")
 public class NilaiResource {
-    @GET
-    @Path("/")
-    @Produces({MediaType.APPLICATION_JSON})
-    public List<Nilai> getAllNilai() {
-        return NilaiDAO.getAllNilai();
-    }
 
     @GET
     @Path("/{kode}")
@@ -30,4 +24,5 @@ public class NilaiResource {
     public List<Nilai> getNilai(@PathParam("kode") String kode) {
         return NilaiDAO.getNilai(kode);
     }
+
 }

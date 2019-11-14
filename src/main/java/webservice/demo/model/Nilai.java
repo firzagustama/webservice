@@ -1,10 +1,7 @@
-package webservice.demo.nilai;
+package webservice.demo.model;
 
-import webservice.demo.jadwal.Jadwal;
-import webservice.demo.karyawan.Karyawan;
-
-import java.util.HashMap;
-import java.util.Map;
+import webservice.demo.model.Jadwal;
+import webservice.demo.model.Karyawan;
 
 public class Nilai {
     Karyawan karyawan;

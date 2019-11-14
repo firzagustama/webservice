@@ -1,6 +1,7 @@
-package webservice.demo.jadwal;
+package webservice.demo.resource;
 
-import webservice.demo.karyawan.Karyawan;
+import webservice.demo.dao.JadwalDAO;
+import webservice.demo.model.Jadwal;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;

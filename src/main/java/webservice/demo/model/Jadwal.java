@@ -1,7 +1,7 @@
-package webservice.demo.jadwal;
+package webservice.demo.model;
 
 public class Jadwal {
-    Integer id;
+    String kode;
     String materi;
     String tanggal;
     Integer lokasi;
@@ -11,20 +11,20 @@ public class Jadwal {
 
     }
 
-    public Jadwal(Integer id, String materi, String tanggal, Integer lokasi, Integer session) {
-        this.id = id;
+    public Jadwal(String kode, String materi, String tanggal, Integer lokasi, Integer session) {
+        this.kode = kode;
         this.materi = materi;
         this.tanggal = tanggal;
         this.lokasi = lokasi;
         this.session = session;
     }
 
-    public Integer getId() {
-        return id;
+    public String getKode() {
+        return kode;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setKode(String kode) {
+        this.kode = kode;
     }
 
     public String getMateri() {

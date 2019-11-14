@@ -1,16 +1,16 @@
-package webservice.demo.karyawan;
+package webservice.demo.model;
 
 public class Karyawan {
     String kode;
     String nama;
     String alamat;
-    Integer phone;
+    String phone;
 
     public Karyawan() {
 
     }
 
-    public Karyawan(String kode, String nama, String alamat, Integer phone) {
+    public Karyawan(String kode, String nama, String alamat, String phone) {
         this.kode = kode;
         this.nama = nama;
         this.alamat = alamat;
@@ -41,11 +41,11 @@ public class Karyawan {
         this.alamat = alamat;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(Integer phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 }
